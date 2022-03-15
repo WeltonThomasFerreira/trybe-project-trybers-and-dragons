@@ -11,7 +11,6 @@ export default abstract class Archetype {
     this._name = name;
     this._special = 0;
     this._cost = 0;
-    Archetype._createdArchetypeInstances += 1;
   }
 
   static createdArchtypeInstances(): number {
