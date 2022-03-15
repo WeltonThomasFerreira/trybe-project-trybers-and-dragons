@@ -1,5 +1,5 @@
 export default abstract class Race {
-  private static _createdRacesInstances = 0;
+  static _createdRacesInstances = 0;
 
   private _name: string;
   private _dexterity: number;
@@ -9,7 +9,7 @@ export default abstract class Race {
     this._dexterity = dexterity;
   }
 
-  static get createdRacesInstances(): number {
+  static createdRacesInstances(): number {
     throw new Error('Not implemented');
   }
 
